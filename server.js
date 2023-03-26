@@ -14,9 +14,9 @@ const __dirname = path.resolve();
 dotenv.config();
 
 // configure env file in production
-if (process.env.NODE_ENV === undefined) {
-  dotenv.config({ path: "../.env" });
-}
+//if (process.env.NODE_ENV === undefined) {
+//  dotenv.config({ path: "../.env" });
+//}
 
 // Connect to database
 connectDB();
@@ -48,7 +48,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(
   PORT,
   console.log(
-    `Server running in ${process.env.NODE_ENV} mode on port http://localhost:${PORT}`
+    `Server running in mode on port http://localhost:${PORT}`
       .yellow.bold
   )
 );
