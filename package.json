@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "setup": "npm install",
-    "start": "node server.js",
-    "server": "nodemon server.js"
+    "start": "node index.js",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",

@@ -27,11 +27,13 @@ const app = express();
 app.use(express.json());
 
 // CORS
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+//app.use(
+//  cors({
+//    origin: "*",
+//  })
+//);
+
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -51,3 +53,4 @@ app.listen(
     `Server running in mode on port`
   )
 );
+module.exports = app;
