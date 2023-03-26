@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "setup": "npm install",
+    "dev": "npm run server",
     "start": "node index.js",
     "server": "nodemon index.js"
   },
