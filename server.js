@@ -33,6 +33,10 @@ app.use(
   })
 );
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 // API routes
 app.use("/api/user", userRoutes);
 
