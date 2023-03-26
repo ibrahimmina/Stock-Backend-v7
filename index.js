@@ -6,7 +6,7 @@ import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js";
 import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
 
-const express = require("express");
+import  express from express;
 
 const app = express();
 
