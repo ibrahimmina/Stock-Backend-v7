@@ -7,11 +7,11 @@ import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js";
 import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
 
-const __dirname = path.resolve();
+//const __dirname = path.resolve();
 
 // Deployment configuration
 //configure env file in dev mode
-dotenv.config();
+//dotenv.config();
 
 // configure env file in production
 //if (process.env.NODE_ENV === undefined) {
@@ -48,7 +48,6 @@ const PORT = process.env.PORT || 5000;
 app.listen(
   PORT,
   console.log(
-    `Server running in mode on port http://localhost:${PORT}`
-      .yellow.bold
+    `Server running in mode on port`
   )
 );
